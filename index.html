@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Chester Hanz Teves, Web Developer & Creative Designer">
+    <title>Chester Hanz Teves | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header id="home">
+        <nav aria-label="Main navigation">
+            <ul class="navbar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1>Hi I'm Chester Hanz Teves</h1>
+            <p>Web Developer & Creative Designer</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <div class="content-wrapper">
+                <p>I'm currently learning web development and enjoy building websites using HTML, CSS, and JavaScript. Aside from coding, I love designing graphics, editing videos, listening to music, and exploring new tech tools.</p>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section aria-labelledby="hobbies-heading">
+            <h2 id="hobbies-heading">My Hobbies</h2>
+            <div class="content-wrapper">
+                <ul class="hobbies-list">
+                    <li>Music</li>
+                    <li>Games</li>
+                    <li>Reading</li>
+                    <li>Long Rides</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <div class="content-wrapper">
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <img src="images/Project1.png" alt="Portfolio Website Screenshot" loading="lazy">
+                        <div class="card-content">
+                            <h3>Portfolio Website</h3>
+                            <p>The site you're viewing now! Built with HTML/CSS.</p>
+                            <div class="tags">
+                                <span>HTML/CSS</span>
+                                <span>Flexbox</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <img src="images/coming-soon-button-coming-soon-text-web-template-sign-icon-banner-vector.jpg" alt="Weather App Coming Soon" loading="lazy">
+                        <div class="card-content">
+                            <h3>Weather App</h3>
+                            <p>Future project: Displays real-time weather data.</p>
+                            <div class="tags">
+                                <span>JavaScript</span>
+                                <span>API</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <img src="images/coming-soon-button-coming-soon-text-web-template-sign-icon-banner-vector.jpg" alt="Todo App Coming Soon" loading="lazy">
+                        <div class="card-content">
+                            <h3>To-do List App</h3>
+                            <p>Future project: Task manager with local storage.</p>
+                            <div class="tags">
+                                <span>JavaScript</span>
+                                <span>CRUD</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Connect With Me</h2>
+            <div class="content-wrapper">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/teveschesterhanz" target="_blank" rel="noopener noreferrer">
+                        Facebook
+                    </a>
+                    <a href="https://www.tiktok.com/@chesterhanzteves" target="_blank" rel="noopener noreferrer">
+                        Tiktok
+                    </a>
+                    <a href="https://www.instagram.com/chesterteves_/" target="_blank" rel="noopener noreferrer">
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section aria-labelledby="profile-heading">
+            <h2 id="profile-heading">My Photo</h2>
+            <div class="content-wrapper">
+                <img src="images/me.jpg" alt="Portrait of Chester Hanz Teves" class="profile-photo" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Chester Hanz Teves. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Auto-update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
