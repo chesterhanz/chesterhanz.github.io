@@ -1,7 +1,6 @@
 // Auto-update copyright year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// ===== Day 6 Features =====
 // Theme Toggle
 const themeToggle = document.createElement('button');
 themeToggle.innerHTML = '🌓';
