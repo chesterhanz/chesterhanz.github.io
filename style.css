@@ -269,6 +269,33 @@ footer {
   margin-top: 2rem;
 }
 
+/* ===== JavaScript CSS ===== */
+/* Light Mode Colors */
+.light-mode {
+  --dark-bg: #1f8ab4;
+  --text-light: #ffffff;
+  --primary: rgba(249, 251, 253, 0.9);
+}
+
+#theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primary);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 1.5rem;
+}
+
+/* ===== Project Card Hover Effects =====*/
+.project-card img {
+  transition: transform 0.5s ease;
+}
+
 /* ===== Animations ===== */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
