@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-do List | Daily Task</h1>
+    
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="e.g., Morning jog" required>
+      
+      <select id="priority-select">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+      
+      <input type="date" id="due-date">
+      <input type="time" id="due-time">
+      
+      <button type="submit">Add Task</button>
+    </form>
+    
+    <div class="filters">
+      <button id="sort-date">Sort by Time</button>
+      <button id="sort-priority">Sort by Priority</button>
+    </div>
+    
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
