@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogging Weather Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>⛅ Jogging Weather</h1>
+    
+    <div class="input-section">
+      <input type="text" id="city-input" placeholder="Enter city...">
+      <button id="fetch-weather">Check Weather</button>
+      <button id="get-location">Use My Location</button>
+    </div>
+    
+    <div id="weather-result" class="weather-card hidden">
+      <h2 id="city-name">City</h2>
+      <div class="weather-main">
+        <img id="weather-icon" src="" alt="Weather Icon">
+        <div>
+          <span id="temp">--°C</span>
+          <p id="weather-desc">--</p>
+        </div>
+      </div>
+      <div class="weather-details">
+        <p>🌬️ Wind: <span id="wind-speed">--</span> km/h</p>
+        <p>💧 Humidity: <span id="humidity">--</span>%</p>
+      </div>
+      <div id="jogging-recommendation" class="recommendation"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
