@@ -1,4 +1,4 @@
-const API_KEY = 'YOUR_OPENWEATHER_API_KEY'; // Get from https://openweathermap.org/
+const API_KEY = '232fd12faa92a848e25b5c3df4a2199f'; // Get from https://openweathermap.org/
 
 // DOM Elements
 const cityInput = document.getElementById('city-input');
