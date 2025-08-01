@@ -269,6 +269,16 @@ footer {
   margin-top: 2rem;
 }
 
+footer a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
 /* ===== JavaScript CSS ===== */
 /* Light Mode Colors */
 .light-mode {
